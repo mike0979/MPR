@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/UltimageTK_LogoOnly.png</file>
+    </qresource>
+</RCC>

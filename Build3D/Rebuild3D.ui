@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Build3DClass</class>
+ <widget class="QWidget" name="Build3DClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1136</width>
+    <height>881</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MPR</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Rebuild3D.qrc">
+    <normaloff>:/Resources/UltimageTK_LogoOnly.png</normaloff>:/Resources/UltimageTK_LogoOnly.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QVTKOpenGLWidget" name="vtkCoronal" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 127);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QVTKOpenGLWidget" name="vtkSagittal" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 127);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QVTKOpenGLWidget" name="vtkHorizontal" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="vtkReubild" native="true"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Oblique</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Axis Aligned</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLWidget</class>
+   <extends>QWidget</extends>
+   <header>qvtkopenglwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Rebuild3D.qrc"/>
+ </resources>
+ <connections/>
+</ui>
